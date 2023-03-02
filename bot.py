@@ -4,8 +4,8 @@ import io
 from telegram import ForceReply, Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = '5719504378:AAGAT5cMC6-DqzE2UY2tBADKZFew9KRMYEA'
-
+with open('token.txt', 'r') as token_file:
+    TOKEN = token_file.read()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Hey, send me r1 and r2 separated by the space"""
