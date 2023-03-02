@@ -1,0 +1,5 @@
+venv/
+.idea/
+test.py
+book1.ipynb
+book2.ipynb
